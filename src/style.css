@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 0, 0);
+}
+
+.container {
+  display: flex;
+  background-color: rgb(22, 22, 22);
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*height: calc(100vh - 200px);*/
+  height: auto;
+  min-width: 300px;
+  background-color: rgba(65, 65, 65, 0.87);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* PARTIE HEADER */
+.frameHeader {
+  /* background-color: purple; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.25) 0px 4px 6px -2px;
+}
+.addToDo {
+  height: 50px;
+  width: 50px;
+  background-color: dimgrey;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+.title {
+  flex: auto;
+}
+.title h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+.supprToDo {
+  height: 50px;
+  width: 50px;
+  background-color: dimgrey;
+  color: rgb(255, 255, 255);
+  font-size: 2.2rem;
+}
+
+/* PARTIE MAIN */
+.frameMain {
+  /* background-color: blue; */
+  flex: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.25) 0px 4px 6px -2px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: auto;
+  max-height: 700px;
+}
+.frameMain div {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(24, 24, 26, 0.801);
+  border: 1px solid rgba(0, 0, 0, 0.767);
+  border-bottom: 0.5px solid rgba(100, 100, 100, 0.726);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.25) 0px 4px 6px -2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+
+/* PARTIE FOOTER */
+.frameFooter {
+  /* background-color: red; */
+  height: 50px;
+}
